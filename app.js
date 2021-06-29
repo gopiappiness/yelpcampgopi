@@ -295,7 +295,9 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err })
     // res.send('Oh boy something went Wrong');
 })
+
+const port=process.env.PORT || 8080;
 //localhost:port number in 3000
-app.listen(8080, () => {
-    console.log('Serving on Port  Number is 8080 !!! ');
+app.listen(port, () => {
+    console.log(`Serving on Port  Number is ${port}`);
 })
