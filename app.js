@@ -103,6 +103,11 @@ const scriptSrcUrls = [
     "https://kit.fontawesome.com/",
     "https://cdnjs.cloudflare.com/",
     "https://cdn.jsdelivr.net",
+    "https://icons.getbootstrap.com/icons",
+    "https://img.icons8.com",
+    "http://icons.getbootstrap.com/icons/",
+    "https://icons.getbootstrap.com/icons/house-door/",
+    
 ];
 const styleSrcUrls = [
     "https://kit-free.fontawesome.com/",
@@ -111,7 +116,12 @@ const styleSrcUrls = [
     "https://api.tiles.mapbox.com/",
     "https://fonts.googleapis.com/",
     "https://use.fontawesome.com/",
-    "http://cdn.jsdelivr.net/"
+    "https://cdn.jsdelivr.net/",
+    "https://icons.getbootstrap.com/icons",
+    "https://img.icons8.com",
+    "http://icons.getbootstrap.com/icons/",
+    "https://icons.getbootstrap.com/icons/house-door/",
+    "https://img.icons8.com/ios/100/000000/add-user-male.png",
 ];
 const connectSrcUrls = [
     "https://api.mapbox.com/",
@@ -133,16 +143,13 @@ app.use(
                 "'self'",
                 "blob:",
                 "data:",
-                "https://res.cloudinary.com/douqbebwk/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
+                "https://res.cloudinary.com/dqy38xq3p/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
                 "https://images.unsplash.com/",
             ],
             fontSrc: ["'self'", ...fontSrcUrls],
         },
     })
 );
-    
-
-
 
 
 app.use(passport.initialize());
