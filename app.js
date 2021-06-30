@@ -1,11 +1,6 @@
 if(process.env.NODE_ENV !=="production"){
     require('dotenv').config();
 }
-
-
-// console.log(process.env.SECRET);
-// console.log(process.env.API_KEY);
-//include in needed express
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -193,10 +188,7 @@ const validateCampground = (req, res, next) => {
 
 }
 
-
-
 //middle ware
-
 const validateReview = (req, res, next) => {
     const reviewSchema = Joi.object({
         review: Joi.object({
@@ -240,7 +232,6 @@ app.get('/campgrounds/new', (req, res) => {
 });
 
 app.post('/campgrounds', validateCampground, catchAsync(async (req, res, next) => {
-    // if(!req.body.campground) throw new ExpressError('Invalid Campground Data',400);
     const campground = new Campground(req.body.campground);
     await campground.save();
     res.redirect(`/campgrounds/${campground._id}`)
