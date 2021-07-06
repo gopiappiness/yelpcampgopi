@@ -33,5 +33,13 @@
     "sanitize-html": "^2.4.0"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gopiappiness/yelpcampgopi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gopiappiness/yelpcampgopi/issues"
+  },
+  "homepage": "https://github.com/gopiappiness/yelpcampgopi#readme",
   "description": ""
 }

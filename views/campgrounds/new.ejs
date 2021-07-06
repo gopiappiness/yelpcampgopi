@@ -1,33 +1,56 @@
 <% layout('/layouts/boilerplate') %> 
 
 <div class="row">
-    <h1 class="text-center">New Campground</h1>
+    <h1 class="text-center">New Temples</h1>
     <div class="col-md-6 offset-md-3">
         <form action="/campgrounds" method="POST" class="validated-form" enctype="multipart/form-data">
             <div class="mb-3">
                 <label class="form-label" for="title">Title</label>
-                <input class="form-control" type="text"  placeholder="Enter Title Name" id="title" name="campground[title]" required>
+                <input class="form-control" type="text"  placeholder="Enter Temple Name" id="title" name="campground[title]" required>
                 <div class="valid-feedback">
                     looks good!
                 </div>
             </div>
             <div class="mb-3">
-                <label  class="form-label" for="location">Location</label>
+                <label  class="form-label" for="location">Address</label>
                 <input class="form-control" type="text" placeholder="Enter Location" id="location" name="campground[location]" required>
                 <div class="valid-feedback">
                     looks good!
                 </div>
             </div>
-          <div class="mb-3">
-            <label  class="form-label" for="price">Campground Price</label>
-            <div class="input-group">
-                <span class="input-group-text" id="price-label">$</span>
-                <input type="text" class="form-control" placeholder="0.00" aria-label="price" aria-describedby="price-label" name="campground[price]"required>
+
+            <div class="mb-3">
+                <label  class="form-label" for="opentiming">Open-Timing</label>
+                <input class="form-control" type="text" placeholder="Ex-10:00 AM" id="opentiming" name="campground[opentiming]" required>
                 <div class="valid-feedback">
                     looks good!
                 </div>
-              </div>
             </div>
+            <div class="mb-3">
+                <label  class="form-label" for="opentiming">Close-Timing</label>
+                <input class="form-control" type="text" placeholder="Ex-07:00 PM" id="closetiming" name="campground[closetiming]" required>
+                <div class="valid-feedback">
+                    looks good!
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label  class="form-label" for="contactnumber">Contact Number</label>
+                <input class="form-control" type="number" placeholder="Ex:+919988556634" id="contactnumber" name="campground[contactnumber]" required>
+                <div class="valid-feedback">
+                    looks good!
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label  class="form-label" for="websites">Websites</label>
+                <input class="form-control" type="text" placeholder="www.pillaiyarpattitemple.com" 
+                id="websites" name="campground[websites]" required>
+                <div class="valid-feedback">
+                    looks good!
+                </div>
+            </div>
+           
 
             <div class="mb-3">
                 <label  class="form-label" for="description">Description</label>
@@ -47,11 +70,11 @@
                 </div>
             </div>
             <div class="mb-3 text-center">
-            <button class="btn btn-success ">Add Campground</button>
+            <button class="btn btn-success ">Add Temples</button>
             </div>
 
         </form>
-        <div class="text-center"><a href="/campgrounds" >All Campgrounds</a>
+        <div class="text-center"><a href="/campgrounds" >All Temples</a>
         </div>
     </div>
 </div>

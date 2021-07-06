@@ -30,7 +30,11 @@ const seedDB=async()=>{
          title:`${sample(descriptors)} ${sample(places)}`,
          image: 'https://source.unsplash.com/collection/190727/500x500',
          description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, est ipsam! Iste blanditiis fugiat nam exercitationem nesciunt repudiandae quis aspernatur distinctio vel deleniti est consectetur nisi beatae ratione, maxime enim?',
-         price,
+        //  price,
+        opentiming:"4.50AM",
+        closetiming:"10.30PM",
+        contactnumber:"+918957456789",
+        websites:"www.pillaiyarpattitemple.com",
          geometry:{ 
             type: 'Point',
              coordinates: [

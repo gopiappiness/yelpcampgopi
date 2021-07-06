@@ -39,15 +39,20 @@ mongoose.connect(dbUrl,{
 
 //data base connected or not checking
 const db = mongoose.connection;
+
 db.on("err", console.error.bind(console, "connection error"));
 db.once("open", () => {
     console.log("Database connected");
 });
+
 const app = express();
 
+//html not allowed script so we used ejs 
 app.engine('ejs', ejsMate);
+
 //this view engine is ejs format
 app.set('view engine', 'ejs');
+
 app.set('/views', path.join(__dirname, '/views'))
 
 
@@ -294,7 +299,7 @@ app.use((err, req, res, next) => {
     // res.send('Oh boy something went Wrong');
 })
 
-const port=process.env.PORT || 8080;
+const port=process.env.PORT || 3000;
 //localhost:port number in 3000
 app.listen(port, () => {
     console.log(`Serving on Port  Number is ${port}`);
